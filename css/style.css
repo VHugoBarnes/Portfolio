@@ -1,8 +1,63 @@
-body {
-    background: blueviolet;
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
 }
 
-/* selector de etiqueta */
-.link{
-    
+.header{
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+.hero{
+    height: 300px;
+    background-image: url(../img/me.jpg);
+    background-color: #1b2127;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+h1{
+    line-height: 150%;
+    font-size: 40px;
+    letter-spacing: -.2px;
+    color: white;
+
+}
+
+.portfolio{
+    background: #FAFAFA;
+}
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+}
+
+.project-details{
+    width: 500px;
+}
+.project-imageContainer{
+    width: 500px;
+}
+
+
+h1 strong{
+    color: #026fff;
 }
