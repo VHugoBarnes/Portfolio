@@ -11,6 +11,7 @@ body{
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu{
@@ -53,18 +54,14 @@ h1, h2, h3, h4, h5, h6{
     font-weight: normal;
 }
 /*MAIN SECTION*/
-.hero{
+.hero {
     height: 300px;
-    /* background-image: url(../img/pepe.jpg); */
     background-color: #1b2127;
-    /* background-size: 400px 400px; */
-    /* background-repeat: no-repeat; */
-    /* background-position-x: right; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-}
+    flex-wrap: wrap;
+  }
 
 .hero-image{
     object-fit: cover; /*Con esta declaración mí imagen podrá caber dentro del div*/
@@ -110,6 +107,7 @@ h2{
     -webkit-box-shadow: 0px 0px 20px 1px rgba(136,136,136,1);
     -moz-box-shadow: 0px 0px 20px 1px rgba(136,136,136,1);
     box-shadow: 0px 0px 20px 1px rgba(136,136,136,1);
+    flex-wrap: wrap;
 }
 
 .project-course, .project-date, .project-url{
@@ -136,10 +134,14 @@ h2{
 }
 
 .project-details{
-    width: 500px;
+    width: 50%;
 }
+
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img{
+    width: 100%;
 }
 
 /*ACHIEVEMENTS SECTION*/
@@ -196,6 +198,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social{
@@ -258,6 +261,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -272,11 +276,85 @@ h2{
 
 .container{
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+/* MEDIA QUERIES */
+/* DESKTOP FIRST */
+/* STARTS FROM THE LARGER MEDIA QUERIE */
+
+@media screen and (max-width: 1366px){
+    body{
+
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: initial;
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a{
+        justify-content: center;       
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }
+    .project-imageContainer{
+        padding: 0;
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        padding: 0;
+        width: auto;  
+        font-size: 16px;
+    }
+    .project-course, .project-date, .project-url{
+        margin: .3em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: .7em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: .8em;
+    }
+@media screen and (max-width: 480px){
+        .project-details{
+            padding: 0;
+            width: auto;  
+            font-size: 12px;
+        }
+    
+}
+@media screen and (max-width: 320px){
+    body{
+        
+    }
 }
