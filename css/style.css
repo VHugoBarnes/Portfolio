@@ -290,9 +290,30 @@ h2{
 /* DESKTOP FIRST */
 /* STARTS FROM THE LARGER MEDIA QUERIE */
 
-@media screen and (max-width: 1366px){
-    body{
+@media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
 
+    }
+    .hero h1{
+        font-size: 2em;
+        z-index: 2;
+        text-shadow: 1px 2px 2px #000;
     }
 }
 
@@ -308,11 +329,16 @@ h2{
         height: 50px;
     }
     .header a{
-        justify-content: center;       
+        justify-content: center; 
+
     }
     .header .logo{
         text-align: center;
     }
+    /* HERO */
+
+
+    /* PROJECT */
     .project{
         display: block;
     }
@@ -345,12 +371,46 @@ h2{
     .project-description{
         font-size: .8em;
     }
+    .experience{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .experience img{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 480px){
         .project-details{
             padding: 0;
             width: auto;  
             font-size: 12px;
         }
+        .experience-detail{
+            margin: -2em .5em .5em;
+            padding: 1em;
+        }
+        .contact {
+            height: auto;
+            padding: 1.5em 0;
+            text-align: center;
+            display: block;
+          }
+          .form-email button {
+            margin: 1em auto;
+          }
+          .form-email h3 {
+            margin-top: 0;
+          }
+          .footer {
+            display: block;
+            text-align: center;
+            border: 1px solid transparent;
+          }
+          .social-link {
+            width: 40px;
+            height: 40px;
+            background-size: 100%;
+          }
     
 }
 @media screen and (max-width: 320px){
